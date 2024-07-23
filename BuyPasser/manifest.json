@@ -1,1 +1,18 @@
 
+{
+    "name": "BuyPasser",
+    "description": "Extension for bypassing Iranian low-level websites that force you Buying Services! :D have nice time with bypassing and use freely. author: @rezamqds | www.dady.tech",
+    "author": "Reza Moghaddas @rezamqds",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    
+    "action": {"default_popup": "popup.html"},
+    
+    "permissions": ["tabs", "activeTab"],
+      
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["script.js"]
+      }]
+  }
